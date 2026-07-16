@@ -21,11 +21,12 @@ def main():
             choice_B = get_data()
         print(f"Choice B: {choice_B['name']}, a {choice_B.get('description')} from {choice_B['country']}")
 
-        try:
+        while True:
             user_choice = input("Who has more followers? Type 'A' or 'B': ").upper()
-        except ValueError:
-            print("Invalid input.")
-            user_choice = input("Who has more followers? Type 'A' or 'B': ").upper()
+            if user_choice in ("A", "B"):
+                break
+
+            print("Please enter A or B."
 
         correct_answer = "A" if choice_z['follower_count'] > choice_B['follower_count'] else "B"
 
