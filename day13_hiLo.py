@@ -1,6 +1,10 @@
 from art import logo, vs
 from game_data import data
 import random
+import os
+
+def clear():
+    os.system("cls" if os.name == "nt" else "clear")
 
 def get_data():
     return random.choice(data)
@@ -41,6 +45,8 @@ def main():
 
         if user_choice == correct_answer:
             score += 1
+            clear()
+            print(logo)
             print(f"You're right! Current score: {score}")
         else:
             print(f"Sorry, that's wrong. Final score: {score}")
