@@ -17,7 +17,7 @@ def main():
         print(f"Choice A: {choice_A['name']}, a {choice_A['description']} from {choice_A['country']}")
         print(vs)
         choice_B = get_data()
-        if choice_B.['name'] == choice_A['name']:
+        while choice_B == choice_A:
             choice_B = get_data()
         print(f"Choice B: {choice_B['name']}, a {choice_B.get('description')} from {choice_B['country']}")
 
