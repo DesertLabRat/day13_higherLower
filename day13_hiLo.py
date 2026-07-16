@@ -5,6 +5,14 @@ import random
 def get_data():
     return random.choice(data)
 
+def display_choice(label, choice):
+    print(
+        f"Choice {label}: "
+        f"{choice['name']}, "
+        f"a {choice['description']} "
+        f"from {choice['country']}"
+    )
+
 def main():
     score = 0
     print(logo)
@@ -14,12 +22,13 @@ def main():
         else:
             choice_A = choice_B
 
-        print(f"Choice A: {choice_A['name']}, a {choice_A['description']} from {choice_A['country']}")
-        print(vs)
         choice_B = get_data()
         while choice_B == choice_A:
             choice_B = get_data()
-        print(f"Choice B: {choice_B['name']}, a {choice_B.get('description')} from {choice_B['country']}")
+
+        display("A", choice_A)
+        print(vs)
+        display("B", choice_B)
 
         while True:
             user_choice = input("Who has more followers? Type 'A' or 'B': ").upper()
