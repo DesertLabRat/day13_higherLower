@@ -27,23 +27,14 @@ def main():
             print("Invalid input.")
             user_choice = input("Who has more followers? Type 'A' or 'B': ").upper()
 
-        if choice_A['follower_count'] > choice_B['follower_count']:
-            if user_choice == 'A':
-                score += 1
-                print(f"You're right! Current score: {score}")
-            else:
-                print(f"Sorry, that's wrong. Final score: {score}")
-                break
-        elif choice_A['follower_count'] < choice_B['follower_count']:
-            if user_choice == 'B':
-                score += 1
-                print(f"You're right! Current score: {score}")
-            else:
-                print(f"Sorry, that's wrong. Final score: {score}")
-                break
+        correct_answer = "A" if choice_z['follower_count'] > choice_B['follower_count'] else "B"
 
-
-
+        if user_choice == correct_answer:
+            score += 1
+            print(f"You're right! Current score: {score}")
+        else:
+            print(f"Sorry, that's wrong. Final score: {score}")
+            break
 
 
 if __name__ == "__main__":
