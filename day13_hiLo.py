@@ -30,18 +30,18 @@ def main():
         while choice_B == choice_A:
             choice_B = get_data()
 
-        display("A", choice_A)
+        display_choice("A", choice_A)
         print(vs)
-        display("B", choice_B)
+        display_choice("B", choice_B)
 
         while True:
             user_choice = input("Who has more followers? Type 'A' or 'B': ").upper()
             if user_choice in ("A", "B"):
                 break
 
-            print("Please enter A or B."
+            print("Please enter A or B.")
 
-        correct_answer = "A" if choice_z['follower_count'] > choice_B['follower_count'] else "B"
+        correct_answer = "A" if choice_A['follower_count'] > choice_B['follower_count'] else "B"
 
         if user_choice == correct_answer:
             score += 1

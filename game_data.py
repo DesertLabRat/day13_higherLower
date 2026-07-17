@@ -66,6 +66,7 @@ data = [
         'follower_count': 127,
         'description': 'Reality TV personality and Model',
     },
+    {
         'name': 'Jennifer Lopez',
         'follower_count': 119,
         'description': 'Musician and actress',
@@ -81,6 +82,7 @@ data = [
         'follower_count': 109,
         'description': 'Sportswear multinational',
         'country': 'United States'
+    },
     {
         'name': 'Khloé Kardashian',
         'follower_count': 108,
@@ -280,23 +282,3 @@ data = [
         'country': 'United States'
     }
 ]
-    },
-        'country': 'Trinidad and Tobago'
-    {
-        'country': 'United States'
-        'name': 'Kendall Jenner',
-        'country': 'United States'
-    },
-        'description': 'Musician',
-        'follower_count': 131,
-        'name': 'Taylor Swift',
-    {
-        'country': 'Canada'
-        'description': 'Musician',
-    },
-        'name': 'Justin Bieber',
-    {
-        'country': 'United States'
-        'name': 'National Geographic',
-        'country': 'Brasil'
-
